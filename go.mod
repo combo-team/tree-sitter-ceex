@@ -1,4 +1,4 @@
-module github.com/phoenixframework/tree-sitter-ceex
+module github.com/combo-team/tree-sitter-ceex
 
 go 1.22
 
