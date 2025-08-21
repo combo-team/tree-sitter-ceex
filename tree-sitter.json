@@ -5,12 +5,9 @@
       "camelcase": "Heex",
       "scope": "source.heex",
       "path": ".",
-      "file-types": [
-        "heex",
-        "neex"
-      ],
+      "file-types": ["heex"],
       "highlights": "queries/highlights.scm",
-      "injection-regex": "^(heex|neex)$"
+      "injection-regex": "^(heex)$"
     }
   ],
   "metadata": {

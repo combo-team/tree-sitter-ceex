@@ -9,8 +9,8 @@
 - Update tree-sitter requirement. The Rust crate now depends on tree-sitter-language
 
 ## 0.7.0
+
 - Support HEEx expressions `{...}` within the body of a tag, thanks @kevinschweikert and @jonatanklosko!
-- Support NEEx template highlighting, thanks @bcardarella!
 - Separate ending expressions from beginning/middle expressions, thanks @the-mikedavis and @dvic!
 - Enable query constants for Rust projects, thanks @knoebber!
 - Documentation fixes, thanks @the-mikedavis!
@@ -19,12 +19,14 @@
 - Add MIT license
 
 ## 0.6.0
+
 - Support `:if` HEEx special attributes on tags, components, and slots
 - Upgrade to tree-sitter-cli 0.20.7
 - Upgrade to nan 2.16.0
 - Upgrade to prettier 2.7.1
 
 ## 0.5.0
+
 - Add new nodes to support HEEx special attributes `:let`, `:for`, and `:stream`
 - Support self-closing HEEx slots
 - Support hyphens in HTML tag names
@@ -32,6 +34,7 @@
 - Add prettier code formatter
 
 ## 0.4.1
+
 - Add package.json metadata required to integrate with tree-sitter-elixir
 - Update tree-sitter-cli and regenerate parser
 
