@@ -8,15 +8,14 @@
     <%= csrf_meta_tag() %>
     <%# <- punctuation.bracket %>
     <%#                 ^ punctuation.bracket %>
-    <link phx-track-static rel="stylesheet" src={ Routes.static_path(@conn, "/css/app.css") } />
+    <link rel="stylesheet" src={ Routes.static_path(@conn, "/css/app.css") } />
     <%# <- punctuation.bracket %>
     <%# ^ tag %>
     <%#    ^ attribute %>
-    <%#                     ^ attribute %>
-    <%#                           ^ string %>
-    <%#                                         ^ punctuation.bracket %>
-    <%#                                                                                     ^ punctuation.bracket %>
-    <%#                                                                                       ^ punctuation.bracket %>
+    <%#          ^ string %>
+    <%#                        ^ punctuation.bracket %>
+    <%#                                                                    ^ punctuation.bracket %>
+    <%#                                                                      ^ punctuation.bracket %>
   </head>
   <body>
     <%= if true do %>
