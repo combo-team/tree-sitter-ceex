@@ -1,10 +1,10 @@
 [package]
-name = "tree-sitter-heex"
-description = "heex grammar for the tree-sitter parsing library"
+name = "tree-sitter-ceex"
+description = "ceex grammar for the tree-sitter parsing library"
 version = "0.8.1"
-keywords = ["incremental", "parsing", "heex"]
+keywords = ["incremental", "parsing", "ceex"]
 categories = ["parsing", "text-editors"]
-repository = "https://github.com/phoenixframework/tree-sitter-heex"
+repository = "https://github.com/combo-team/tree-sitter-ceex"
 edition = "2018"
 license = "MIT"
 

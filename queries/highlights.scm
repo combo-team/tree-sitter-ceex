@@ -1,4 +1,4 @@
-; HEEx delimiters
+; CEEx delimiters
 [
   "%>"
   "--%>"
@@ -20,28 +20,28 @@
   "}"
 ] @punctuation.bracket
 
-; HEEx operators are highlighted as such
+; CEEx operators are highlighted as such
 "=" @operator
 
-; HEEx inherits the DOCTYPE tag from HTML
+; CEEx inherits the DOCTYPE tag from HTML
 (doctype) @constant
 
-; HEEx comments are highlighted as such
+; CEEx comments are highlighted as such
 (comment) @comment
 
 ; Tree-sitter parser errors
 (ERROR) @error
 
-; HEEx tags and slots are highlighted as HTML
+; CEEx tags and slots are highlighted as HTML
 [
  (tag_name) 
  (slot_name) 
 ] @tag
 
-; HEEx attributes are highlighted as HTML attributes
+; CEEx attributes are highlighted as HTML attributes
 (attribute_name) @attribute
 
-; HEEx special attributes are highlighted as keywords
+; CEEx special attributes are highlighted as keywords
 (special_attribute_name) @keyword
 
 [
@@ -49,7 +49,7 @@
   (quoted_attribute_value)
 ] @string
 
-; HEEx components are highlighted as Elixir modules and functions
+; CEEx components are highlighted as Elixir modules and functions
 (component_name
   [
     (module) @module

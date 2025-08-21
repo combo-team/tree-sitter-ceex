@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.13)
 
-project(tree-sitter-heex
+project(tree-sitter-ceex
         VERSION "0.8.1"
-        DESCRIPTION "Tree-sitter grammar for HEEx files"
-        HOMEPAGE_URL "https://github.com/phoenixframework/tree-sitter-heex"
+        DESCRIPTION "Tree-sitter grammar for CEEx templates"
+        HOMEPAGE_URL "https://github.com/combo-team/tree-sitter-ceex"
         LANGUAGES C)
 
 option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
@@ -24,33 +24,33 @@ add_custom_command(OUTPUT "${CMAKE_CURRENT_SOURCE_DIR}/src/parser.c"
                    WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
                    COMMENT "Generating parser.c")
 
-add_library(tree-sitter-heex src/parser.c)
+add_library(tree-sitter-ceex src/parser.c)
 if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/src/scanner.c)
-  target_sources(tree-sitter-heex PRIVATE src/scanner.c)
+  target_sources(tree-sitter-ceex PRIVATE src/scanner.c)
 endif()
-target_include_directories(tree-sitter-heex PRIVATE src)
+target_include_directories(tree-sitter-ceex PRIVATE src)
 
-target_compile_definitions(tree-sitter-heex PRIVATE
+target_compile_definitions(tree-sitter-ceex PRIVATE
                            $<$<BOOL:${TREE_SITTER_REUSE_ALLOCATOR}>:TREE_SITTER_REUSE_ALLOCATOR>
                            $<$<CONFIG:Debug>:TREE_SITTER_DEBUG>)
 
-set_target_properties(tree-sitter-heex
+set_target_properties(tree-sitter-ceex
                       PROPERTIES
                       C_STANDARD 11
                       POSITION_INDEPENDENT_CODE ON
                       SOVERSION "${TREE_SITTER_ABI_VERSION}.${PROJECT_VERSION_MAJOR}"
                       DEFINE_SYMBOL "")
 
-configure_file(bindings/c/tree-sitter-heex.pc.in
-               "${CMAKE_CURRENT_BINARY_DIR}/tree-sitter-heex.pc" @ONLY)
+configure_file(bindings/c/tree-sitter-ceex.pc.in
+               "${CMAKE_CURRENT_BINARY_DIR}/tree-sitter-ceex.pc" @ONLY)
 
 include(GNUInstallDirs)
 
-install(FILES bindings/c/tree-sitter-heex.h
+install(FILES bindings/c/tree-sitter-ceex.h
         DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/tree_sitter")
-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/tree-sitter-heex.pc"
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/tree-sitter-ceex.pc"
         DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/pkgconfig")
-install(TARGETS tree-sitter-heex
+install(TARGETS tree-sitter-ceex
         LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}")
 
 add_custom_target(ts-test "${TREE_SITTER_CLI}" test

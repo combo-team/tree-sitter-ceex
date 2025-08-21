@@ -1,5 +1,5 @@
 ================================================================================
-root.html.heex
+root.html.ceex
 ================================================================================
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@ root.html.heex
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <%= csrf_meta_tag() %>
-    <%= live_title_tag assigns[:page_title] || "HeexApp", suffix: " · Phoenix Framework" %>
+    <%= live_title_tag assigns[:page_title] || "CeexApp", suffix: " · Phoenix Framework" %>
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
   </head>
@@ -22,7 +22,7 @@ root.html.heex
           </ul>
         </nav>
         <a href="https://phoenixframework.org/" class="phx-logo">
-          <img src={Routes.static_path(@conn, "/images/phoenix.png")} alt="Phoenix Framework Logo"/>
+          <img src={Routes.static_path(@conn, "/images/phoenix.png")} alt="Logo"/>
         </a>
       </section>
     </header>
@@ -183,7 +183,7 @@ root.html.heex
       (tag_name))))
 
 ================================================================================
-app.html.heex
+app.html.ceex
 ================================================================================
 
 <main class="container">
@@ -238,7 +238,7 @@ app.html.heex
       (tag_name))))
 
 ================================================================================
-live.html.heex
+live.html.ceex
 ================================================================================
 
 <main class="container">
@@ -315,11 +315,11 @@ live.html.heex
       (tag_name))))
 
 ================================================================================
-index.html.heex
+index.html.ceex
 ================================================================================
 
 <section class="phx-hero">
-  <h1>Welcome to Phoenix!</h1>
+  <h1>Welcome to Combo!</h1>
   <p>Peace of mind from prototype to production</p>
 </section>
 

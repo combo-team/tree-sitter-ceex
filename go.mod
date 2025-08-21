@@ -1,4 +1,4 @@
-module github.com/phoenixframework/tree-sitter-heex
+module github.com/phoenixframework/tree-sitter-ceex
 
 go 1.22
 

@@ -1,5 +1,5 @@
 module.exports = grammar({
-  name: "heex",
+  name: "ceex",
 
   rules: {
     fragment: ($) => repeat($._node),

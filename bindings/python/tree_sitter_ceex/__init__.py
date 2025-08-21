@@ -1,4 +1,4 @@
-"""Tree-sitter grammar for HEEx files"""
+"""Tree-sitter grammar for CEEx templates"""
 
 from importlib.resources import files as _files
 

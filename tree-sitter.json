@@ -1,26 +1,26 @@
 {
   "grammars": [
     {
-      "name": "heex",
-      "camelcase": "Heex",
-      "scope": "source.heex",
+      "name": "ceex",
+      "camelcase": "Ceex",
+      "scope": "source.ceex",
       "path": ".",
-      "file-types": ["heex"],
+      "file-types": ["ceex"],
       "highlights": "queries/highlights.scm",
-      "injection-regex": "^(heex)$"
+      "injection-regex": "^(ceex)$"
     }
   ],
   "metadata": {
     "version": "0.8.1",
     "license": "MIT",
-    "description": "Tree-sitter grammar for HEEx files",
+    "description": "Tree-sitter grammar for CEEx templates",
     "authors": [
       {
         "name": "Clay"
       }
     ],
     "links": {
-      "repository": "https://github.com/phoenixframework/tree-sitter-heex"
+      "repository": "https://github.com/combo-team/tree-sitter-ceex"
     }
   },
   "bindings": {

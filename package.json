@@ -1,11 +1,11 @@
 {
-  "name": "tree-sitter-heex",
+  "name": "tree-sitter-ceex",
   "version": "0.8.1",
-  "description": "Tree-sitter grammar for HEEx files",
+  "description": "Tree-sitter grammar for CEEx templates",
   "main": "bindings/node",
   "keywords": [
     "elixir",
-    "heex",
+    "ceex",
     "lexer",
     "parser",
     "phoenix",

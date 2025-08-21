@@ -10,7 +10,7 @@
 
 ## 0.7.0
 
-- Support HEEx expressions `{...}` within the body of a tag, thanks @kevinschweikert and @jonatanklosko!
+- Support CEEx expressions `{...}` within the body of a tag, thanks @kevinschweikert and @jonatanklosko!
 - Separate ending expressions from beginning/middle expressions, thanks @the-mikedavis and @dvic!
 - Enable query constants for Rust projects, thanks @knoebber!
 - Documentation fixes, thanks @the-mikedavis!
@@ -20,15 +20,15 @@
 
 ## 0.6.0
 
-- Support `:if` HEEx special attributes on tags, components, and slots
+- Support `:if` CEEx special attributes on tags, components, and slots
 - Upgrade to tree-sitter-cli 0.20.7
 - Upgrade to nan 2.16.0
 - Upgrade to prettier 2.7.1
 
 ## 0.5.0
 
-- Add new nodes to support HEEx special attributes `:let`, `:for`, and `:stream`
-- Support self-closing HEEx slots
+- Add new nodes to support CEEx special attributes `:let`, `:for`, and `:stream`
+- Support self-closing CEEx slots
 - Support hyphens in HTML tag names
 - Update README
 - Add prettier code formatter
@@ -40,7 +40,7 @@
 
 ## 0.4.0
 
-- Add new nodes to support HEEx slots
+- Add new nodes to support CEEx slots
 - Fix: allow for empty comments
 - Update highlights to match those in nvim-treesitter
 - Update README

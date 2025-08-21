@@ -2,8 +2,8 @@ ifeq ($(OS),Windows_NT)
 $(error Windows is not supported)
 endif
 
-LANGUAGE_NAME := tree-sitter-heex
-HOMEPAGE_URL := https://github.com/phoenixframework/tree-sitter-heex
+LANGUAGE_NAME := tree-sitter-ceex
+HOMEPAGE_URL := https://github.com/combo-team/tree-sitter-ceex
 VERSION := 0.8.1
 
 # repository
