@@ -58,3 +58,7 @@ npm run playground
 ```
 
 See [Using Parsers](https://tree-sitter.github.io/tree-sitter/using-parsers) for more information.
+
+## License
+
+MIT
