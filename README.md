@@ -16,45 +16,45 @@ See [Creating Parsers](https://tree-sitter.github.io/tree-sitter/creating-parser
 
 1. Clone this repository:
 
-```sh
-git clone https://github.com/combo-team/tree-sitter-ceex.git
+```
+$ git clone https://github.com/combo-team/tree-sitter-ceex.git
 ```
 
 2. (Optional) Install NodeJS via asdf:
 
-```sh
-cd tree-sitter-ceex
-asdf install
+```
+$ cd tree-sitter-ceex
+$ asdf install
 ```
 
 3. Install npm dependencies:
 
-```sh
-npm install
+```
+$ npm install
 ```
 
 4. Run the tests:
 
-```sh
-npm test
+```
+$ npm test
 ```
 
 5. Run the code formatter:
 
-```sh
-npm run format
+```
+$ npm run format
 ```
 
 6. (Optional) Update the tests (useful when contributing):
 
-```sh
-npm run update_test
+```
+$ npm run update_test
 ```
 
 7. (Optional) Run the web playground (requires Docker):
 
-```sh
-npm run playground
+```
+$ npm run playground
 ```
 
 See [Using Parsers](https://tree-sitter.github.io/tree-sitter/using-parsers) for more information.
